@@ -1,43 +1,120 @@
-body {
-    margin: 60px auto;
-    width: 70%;
-}
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+﻿body {
+	color: #000;
+	font-family:Georgia;
+	font-size:16px;
+	background:black url('../images/background.jpg') no-repeat;
+	background-attachment:fixed;
+	margin:0 0 0 0;	
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+#pagewrap {
+	width: 100%;
+	margin: 0 auto;
 }
 
-ul.posts li {
-    list-style: none;
+#main{
+	width:70%;
+	margin:0 15% 0 15%;
+	padding:0 30px 0 30px;
+	background:rgba(230, 230, 230, 0.8);
+	box-shadow: 6px 0px 5px -5px #999, -6px 0px 5px -5px #999;	
 }
+
+/* Start Styles for Navigation */
+#stickyribbon {
+    color: #fff;
+    background-color:#003366;
+	text-align:center;
+	width:100%;
+	margin:0 0 0 0;
+}
+
+#stickyribbon ul {
+    list-style-type: none;
+    margin: 0 10px;
+    padding: 10px 40px 15px;
+}
+
+#stickyribbon ul li {
+        display: inline;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0 20px;
+}
+
+#stickyribbon ul li a {
+        color: #fff;
+        text-decoration: none;
+        line-height:40px;
+}
+
+#stickyribbon ul li a:hover {
+        color: #c9e0f7; 
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	text-decoration: none;
+	color: #fff;
+	background-color:#003366;
+	padding: 15px 60px;
+	display: none;
+	font-weight:bold;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+#show-menu[type=checkbox]:checked ~ #stickyribbon{
+    display:block;
+}
+/* End Styles for Navigation */
+
+/* Begin Styles for Main */
+h1{
+	text-align:center;
+	margin:0 0 0 0;
+	padding:30px 0 0 0;
+	font-size:50px;
+}
+
+h3{
+	margin:0 0 0 0;
+}
+
+p, ul{
+	font-size: 16px;
+	line-height:20px;
+}
+
+ul{
+	list-style-image:url('../images/images.jfif');	
+}
+
+#animateimg.fade {
+   opacity: .60;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+   
+#animateimg.fade:hover {
+      opacity: 1;
+}
+/* End Styles for Main */
+
+/* Begin Styles for Footer */
+#footer{
+	color: #fff;
+    background-color:#003366;
+	text-align:center;
+	margin:0 0 0 0;
+	line-height:20px;
+
+}
+/* End Styles for Footer */
+
+
